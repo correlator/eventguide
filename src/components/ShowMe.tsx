@@ -24,7 +24,7 @@ const ShowMe = () => {
 
   const [activeTab, setActiveTab] = useState<'festivals' | 'conferences'>('festivals');
   const [visibleConversations, setVisibleConversations] = useState<Conversation[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [, setCurrentIndex] = useState(0);
 
   const conversationCategories: Record<'festivals' | 'conferences', ConversationCategory> = {
     festivals: {
@@ -84,7 +84,7 @@ const ShowMe = () => {
     }, 2000);
     
     return () => clearInterval(interval);
-  }, [activeTab]);
+  }, [activeTab, conversationCategories]);
 
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 20 },

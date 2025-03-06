@@ -54,7 +54,7 @@ const Hero = () => {
               <div className="absolute -top-16 left-0 right-0 z-10 px-4 md:hidden">
                 <div className="chat-container">
                   <div className="bg-[#1982FC] text-white rounded-2xl rounded-tr-sm p-4 shadow-lg w-full">
-                    <p className="text-base font-medium text-center">Let's start planning my trip and setlist!</p>
+                    <p className="text-base font-medium text-center">Let&apos;s start planning my trip and setlist!</p>
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Hero = () => {
                   {/* First Question Bubble */}
                   <div className="mb-16 flex justify-end transform rotate-6">
                     <div className="bg-[#1982FC] text-white rounded-3xl rounded-tr-sm p-5 max-w-[90%] shadow-xl">
-                      <p className="text-lg md:text-xl font-medium">Let's start planning my trip and setlist!</p>
+                      <p className="text-lg md:text-xl font-medium">Let&apos;s start planning my trip and setlist!</p>
                     </div>
                   </div>
                   

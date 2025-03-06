@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaCheck, FaCommentDots, FaArrowRight, FaBuilding, FaEnvelope } from 'react-icons/fa';
+import { FaCheck, FaCommentDots, FaArrowRight, FaBuilding } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Pricing = () => {
@@ -89,7 +89,7 @@ const Pricing = () => {
                 </div>
                 
                 <p className="mb-4 text-sm">
-                  Ask all your questions at public festivals and conferences – affordable and easy!
+                  Ask all your questions at public festivals and conferences &ndash; affordable and easy!
                 </p>
                 
                 <Link 

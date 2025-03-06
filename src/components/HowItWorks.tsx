@@ -1,14 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-
 const HowItWorks = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <section id="how-it-works" className="section bg-gray-50 dark:bg-gray-900">
       <div className="container">

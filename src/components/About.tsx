@@ -68,7 +68,7 @@ const About = () => {
           >
             EventGuide.ai is an SMS-based Q&A service that provides instant answers to every question
             attendees might have at conferences and festivals. From finding stages and food to getting
-            schedule updates and artist information, we've got you covered with a simple text message.
+            schedule updates and artist information, we&apos;ve got you covered with a simple text message.
           </motion.p>
         </div>
 
