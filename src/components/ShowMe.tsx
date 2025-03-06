@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaMusic, FaBuilding, FaPaperPlane } from 'react-icons/fa';
@@ -26,7 +26,7 @@ const ShowMe = () => {
   const [visibleConversations, setVisibleConversations] = useState<Conversation[]>([]);
   const [, setCurrentIndex] = useState(0);
 
-  const conversationCategories: Record<'festivals' | 'conferences', ConversationCategory> = {
+  const conversationCategories = useMemo(() => ({
     festivals: {
       title: 'Music Festivals',
       icon: <FaMusic className="w-5 h-5" />,
@@ -63,7 +63,7 @@ const ShowMe = () => {
         }
       ]
     }
-  };
+  }), []); // Empty dependency array since this data is static
 
   // Add conversations one by one with a delay
   useEffect(() => {

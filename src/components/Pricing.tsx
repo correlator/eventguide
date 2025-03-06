@@ -102,7 +102,7 @@ const Pricing = () => {
             </div>
             
             <div className="mt-4 bg-gray-50 dark:bg-gray-800 rounded-xl p-5">
-              <h4 className="font-semibold text-base mb-3 text-gray-900 dark:text-white">What's included:</h4>
+              <h4 className="font-semibold text-base mb-3 text-gray-900 dark:text-white">What&apos;s included:</h4>
               <ul className="space-y-2">
                 {publicFeatures.map((feature, index) => (
                   <motion.li 
@@ -159,7 +159,7 @@ const Pricing = () => {
             </div>
             
             <div className="mt-4 bg-gray-50 dark:bg-gray-800 rounded-xl p-5">
-              <h4 className="font-semibold text-base mb-3 text-gray-900 dark:text-white">What's included:</h4>
+              <h4 className="font-semibold text-base mb-3 text-gray-900 dark:text-white">What&apos;s included:</h4>
               <ul className="space-y-2">
                 {privateFeatures.map((feature, index) => (
                   <motion.li 

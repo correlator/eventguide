@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaMobileAlt, FaCommentDots, FaPaperPlane } from 'react-icons/fa';
+import { FaArrowRight, FaPaperPlane } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Hero = () => {
