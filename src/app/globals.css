@@ -1,26 +1,59 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --primary: #6C63FF;
+  --secondary: #FF6B6B;
+  --accent: #4ECDC4;
+  --festival: #FFD166;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1A1A2E;
+    --foreground: #F7F7FF;
+    --primary: #8A83FF;
+    --secondary: #FF8A8A;
+    --accent: #6FDCD4;
+    --festival: #FFE0A3;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium transition-colors rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-primary-dark focus:ring-primary;
+  }
+  
+  .btn-secondary {
+    @apply text-white bg-secondary hover:bg-secondary-dark focus:ring-secondary;
+  }
+  
+  .heading {
+    @apply font-bold tracking-tight;
+  }
+  
+  .phone-mockup {
+    @apply relative overflow-hidden border-8 border-dark rounded-[3rem] shadow-xl bg-light;
+  }
 }
