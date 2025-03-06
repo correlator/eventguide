@@ -10,12 +10,6 @@ type Conversation = {
   answer: string;
 };
 
-type ConversationCategory = {
-  title: string;
-  icon: React.ReactNode;
-  conversations: Conversation[];
-};
-
 const ShowMe = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
