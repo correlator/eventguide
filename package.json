@@ -2,10 +2,10 @@
   "name": "eventguide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://scotthoch.github.io/eventguide",
+  "homepage": "https://correlator.github.io/eventguide",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
@@ -31,5 +31,13 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "eslintConfig": {
+    "extends": "next",
+    "rules": {
+      "react/no-unescaped-entities": "off",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   }
 }
