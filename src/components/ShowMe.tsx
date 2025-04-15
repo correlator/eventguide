@@ -18,7 +18,7 @@ const ShowMe = () => {
 
   const [activeTab, setActiveTab] = useState<'festivals' | 'conferences'>('festivals');
   const [visibleConversations, setVisibleConversations] = useState<Conversation[]>([]);
-  const [, setCurrentIndex] = useState(0);
+  const [, setCurrentIndex] = useState(1);
 
   const conversationCategories = useMemo(() => ({
     festivals: {
