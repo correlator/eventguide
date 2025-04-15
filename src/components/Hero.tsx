@@ -29,15 +29,12 @@ const Hero = () => {
               No app downloads. Just send an SMS to get real-time answers about stages, schedules, food, facilities, and more at your event.
             </p>
             <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <Link href="#contact" className="btn btn-primary">
-                Text our Coachella Guide <FaPaperPlane className="ml-2" />
-              </Link>
               <Link href="#what-is-eventguide" className="btn bg-white text-primary border border-primary hover:bg-gray-50 dark:bg-dark dark:text-primary-light dark:border-primary-light dark:hover:bg-gray-800">
                 Learn More <FaArrowRight className="ml-2" />
               </Link>
             </div>
             <div className="mt-8 text-sm text-gray-500 dark:text-gray-400">
-              <p>Launching at Coachella 2025</p>
+              <p>Launching H1 2025</p>
             </div>
           </motion.div>
 
@@ -54,7 +51,7 @@ const Hero = () => {
               <div className="absolute -top-16 left-0 right-0 z-10 px-4 md:hidden">
                 <div className="chat-container">
                   <div className="bg-[#1982FC] text-white rounded-2xl rounded-tr-sm p-4 shadow-lg w-full">
-                    <p className="text-base font-medium text-center">Let&apos;s start planning my trip and setlist!</p>
+                    <p className="text-base font-medium text-center">Are there any AV vendors near the VIP booth?</p>
                   </div>
                 </div>
               </div>
@@ -65,7 +62,7 @@ const Hero = () => {
                   {/* First Question Bubble */}
                   <div className="mb-16 flex justify-end transform rotate-6">
                     <div className="bg-[#1982FC] text-white rounded-3xl rounded-tr-sm p-5 max-w-[90%] shadow-xl">
-                      <p className="text-lg md:text-xl font-medium">Let&apos;s start planning my trip and setlist!</p>
+                      <p className="text-lg md:text-xl font-medium">Is anyone from Acme corp giving a talk today?</p>
                     </div>
                   </div>
                   
