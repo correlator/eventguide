@@ -16,9 +16,9 @@ const ShowMe = () => {
     threshold: 0.1,
   });
 
-  const [activeTab, setActiveTab] = useState<'festivals' | 'conferences'>('festivals');
+  const [activeTab, setActiveTab] = useState<'conferences' | 'festivals'>('conferences');
   const [visibleConversations, setVisibleConversations] = useState<Conversation[]>([]);
-  const [, setCurrentIndex] = useState(1);
+  const [, setCurrentIndex] = useState(0);
 
   const conversationCategories = useMemo(() => ({
     festivals: {

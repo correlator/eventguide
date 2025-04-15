@@ -96,7 +96,7 @@ const Pricing = () => {
                   href="#contact" 
                   className="inline-flex items-center justify-center w-full py-2 px-4 text-sm font-medium text-primary bg-white rounded-full hover:bg-gray-100 transition-colors"
                 >
-                  Text the Coachella Guide <FaArrowRight className="ml-2" />
+                  Text to subscribe to events <FaArrowRight className="ml-2" />
                 </Link>
               </div>
             </div>

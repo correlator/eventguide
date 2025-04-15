@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaPaperPlane } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Hero = () => {
@@ -69,7 +69,7 @@ const Hero = () => {
                   {/* Second Question Bubble */}
                   <div className="flex justify-end transform -rotate-3">
                     <div className="bg-[#1982FC] text-white rounded-3xl rounded-tr-sm p-5 max-w-[90%] shadow-xl">
-                      <p className="text-lg md:text-xl font-medium">How long does it take to walk in from the yellow lot?</p>
+                      <p className="text-lg md:text-xl font-medium">What AV vendor is closest to the VIP lounge?</p>
                     </div>
                   </div>
                 </div>
